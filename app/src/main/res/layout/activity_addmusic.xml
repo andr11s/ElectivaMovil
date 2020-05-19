@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_cancion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Buscar Cancion"></EditText>
+
+        <Button
+            style="@style/EditorFieldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="Buscar"
+            android:textColor="#FFE500"
+            android:onClick="ObtenerCancion"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Cancion"
+            style="@style/CategoryStyle" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/cancion_id"
+                android:hint="Cancion"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_artista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Artista"
+            style="@style/CategoryStyle" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                android:id="@+id/artistaid"
+                android:hint="Artista"
+                android:inputType="text"
+                style="@style/EditorFieldStyle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Album"
+            style="@style/CategoryStyle" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                android:id="@+id/album_id"
+                android:hint="Album"
+                android:inputType="text"
+                style="@style/EditorFieldStyle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_duracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Duracion"
+            style="@style/CategoryStyle"
+            />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+            <EditText
+                android:id="@+id/duracion_id"
+                android:hint="Duracion"
+                android:inputType="text"
+                style="@style/EditorFieldStyle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

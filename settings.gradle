@@ -1,0 +1,2 @@
+rootProject.name='ParcialAppv1'
+include ':app'
